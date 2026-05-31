@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>かけそば総代記 - サポート</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      background: #1a0e05;
+      color: #f5ead8;
+      line-height: 1.8;
+    }
+    header {
+      background: linear-gradient(135deg, #3a1a05, #6b2f08);
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 3px solid #c8860a;
+    }
+    header h1 {
+      font-size: 2.2em;
+      color: #ffd84a;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+      margin-bottom: 8px;
+    }
+    header p {
+      color: #e8d0a0;
+      font-size: 1em;
+    }
+    nav {
+      background: #2a1208;
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      border-bottom: 2px solid #c8860a;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #ffd84a;
+      text-decoration: none;
+      padding: 14px 28px;
+      font-size: 0.95em;
+      transition: background 0.2s;
+    }
+    nav a:hover { background: #3a1a05; }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      font-size: 1.5em;
+      color: #ffd84a;
+      border-left: 5px solid #c8860a;
+      padding-left: 14px;
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 1.1em;
+      color: #f0c060;
+      margin: 20px 0 8px;
+    }
+    p { margin-bottom: 12px; color: #e8d0a0; }
+    .card {
+      background: #2a1208;
+      border: 1px solid #5a3010;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+    .step-num {
+      background: #c8860a;
+      color: #1a0e05;
+      font-weight: bold;
+      font-size: 1.1em;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-body { flex: 1; }
+    .step-body strong { color: #ffd84a; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th {
+      background: #3a1a05;
+      color: #ffd84a;
+      padding: 10px 14px;
+      text-align: left;
+      border: 1px solid #5a3010;
+    }
+    td {
+      padding: 10px 14px;
+      border: 1px solid #3a1a05;
+      color: #e8d0a0;
+      background: #200f06;
+    }
+    tr:nth-child(even) td { background: #2a1208; }
+    .faq-item {
+      background: #2a1208;
+      border: 1px solid #5a3010;
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-bottom: 14px;
+    }
+    .faq-q {
+      color: #ffd84a;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .faq-q::before { content: "Q. "; color: #c8860a; }
+    .faq-a::before { content: "A. "; color: #80c060; font-weight: bold; }
+    .contact-box {
+      background: #2a1208;
+      border: 2px solid #c8860a;
+      border-radius: 14px;
+      padding: 30px;
+      text-align: center;
+    }
+    .contact-box a {
+      color: #ffd84a;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    footer {
+      background: #0e0804;
+      text-align: center;
+      padding: 24px;
+      color: #7a5030;
+      font-size: 0.85em;
+      border-top: 1px solid #3a1a05;
+    }
+    footer a { color: #c8860a; text-decoration: none; }
+    .warning {
+      background: #3a0a0a;
+      border: 1px solid #c04040;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 14px;
+      color: #f0a0a0;
+    }
+    .warning::before { content: "⚠️ "; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🍜 かけそば総代記</h1>
+  <p>サポートページ</p>
+</header>
+
+<nav>
+  <a href="#howto">遊び方</a>
+  <a href="#menu">蕎麦メニュー</a>
+  <a href="#faq">よくある質問</a>
+  <a href="#contact">お問い合わせ</a>
+  <a href="privacy.html">プライバシーポリシー</a>
+</nav>
+
+<div class="container">
+
+  <!-- アプリ概要 -->
+  <section>
+    <h2>アプリについて</h2>
+    <div class="card">
+      <p>「かけそば総代記」は、老舗の蕎麦屋を舞台にした60秒アクションゲームです。カウンター越しにやってくるお客さんの注文を見極め、素早く蕎麦を仕上げて提供しましょう！</p>
+      <p>伝説の名作「かけそば一代記」をオマージュした、テンポ良く遊べる本格そば屋経営ゲームです。</p>
+    </div>
+  </section>
+
+  <!-- 遊び方 -->
+  <section id="howto">
+    <h2>遊び方</h2>
+    <div class="card">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>蕎麦玉をタップして茹でる</strong><br>
+          画面右下の蕎麦玉をタップすると、どんぶりにかけそばが完成します。
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>必要ならトッピングをタップ</strong><br>
+          お客さんの注文に合わせて、かき揚げ・海老天・生卵のいずれかをタップして乗せます。トッピング不要なら次のステップへ。
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>蕎麦をドラッグしてお客さんに届ける</strong><br>
+          完成した蕎麦をドラッグして、注文したお客さんの上でドロップします。
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>間違えたら「作り直し」ボタン</strong><br>
+          トッピングを間違えた場合は「作り直し」ボタンで最初からやり直せます。
+        </div>
+      </div>
+    </div>
+
+    <h3>ゲームのルール</h3>
+    <div class="card">
+      <p>・制限時間は<strong style="color:#ffd84a">60秒</strong>。時間内にできるだけ多くの蕎麦を提供しよう。</p>
+      <p>・正解提供で残り時間<strong style="color:#80c060">＋1秒</strong>、ミス・時間切れで<strong style="color:#f08080">－1秒</strong>。</p>
+      <p>・5人提供ごとに<strong style="color:#ffd84a">フィーバー発動</strong>！お客さんの待ち時間が短縮され加速する。</p>
+      <p>・連続正解で<strong style="color:#ffd84a">コンボボーナス</strong>発生！</p>
+    </div>
+
+    <div class="warning">
+      柴犬のお客さんに注文通りの蕎麦を出すと<strong>売上がマイナス</strong>になります！柴犬をタップして帰ってもらいましょう。
+    </div>
+  </section>
+
+  <!-- 蕎麦メニュー -->
+  <section id="menu">
+    <h2>蕎麦メニュー</h2>
+    <table>
+      <tr>
+        <th>メニュー</th>
+        <th>必要なトッピング</th>
+        <th>売上</th>
+      </tr>
+      <tr><td>かけそば</td><td>なし</td><td>¥400</td></tr>
+      <tr><td>かき揚げ天蕎麦</td><td>かき揚げ</td><td>¥550</td></tr>
+      <tr><td>海老天蕎麦</td><td>海老天</td><td>¥650</td></tr>
+      <tr><td>月見蕎麦</td><td>生卵</td><td>¥500</td></tr>
+    </table>
+  </section>
+
+  <!-- お客さん一覧 -->
+  <section>
+    <h2>お客さんの種類</h2>
+    <div class="card">
+      <p>少女・少年・OL・サラリーマン・お爺さん・お婆さんの6種類のお客さんが来店します。最大3人同時に来店し、それぞれが異なる注文をします。</p>
+      <p>また、特別なお客さんとして<strong style="color:#f08080">柴犬</strong>が来店することがあります。柴犬は注文通りに提供すると売上がマイナスになるので注意！</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>よくある質問</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">蕎麦玉がどこにあるかわかりません</div>
+      <div class="faq-a">ゲーム開始時に画面右下の蕎麦玉の周りに赤い丸と吹き出しが表示されます。そこをタップしてください。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">トッピングを間違えてしまいました</div>
+      <div class="faq-a">「作り直し」ボタンをタップすると、蕎麦をリセットして最初からやり直せます。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">柴犬が来たらどうすればいいですか？</div>
+      <div class="faq-a">柴犬をタップすると帰ってもらえます。代わりに別のお客さんが来店します。絶対に蕎麦を提供しないようにしましょう。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">ゲームを途中で終了するには？</div>
+      <div class="faq-a">iPhoneの画面下からスワイプアップするとホーム画面に戻れます。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">スコアをシェアするには？</div>
+      <div class="faq-a">ゲーム終了後の「営業終了」画面に、XやLINEでスクリーンショットをシェアするボタンが表示されます。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">対応しているiPhoneの機種は？</div>
+      <div class="faq-a">iOS 14.0以降を搭載したiPhoneに対応しています。縦画面専用です。</div>
+    </div>
+  </section>
+
+  <!-- お問い合わせ -->
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <div class="contact-box">
+      <p style="margin-bottom:16px;">ご不明な点やご意見・不具合のご報告は、下記メールアドレスまでお気軽にお問い合わせください。</p>
+      <!-- ★ メールアドレスをここに入力してください ★ -->
+      <a href="mailto:damed6830@gmail.com">damed6830@gmail.com</a>
+      <p style="margin-top:16px; font-size:0.85em; color:#a08060;">※ お問い合わせへの返信は数日いただく場合があります。</p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p><a href="privacy.html">プライバシーポリシー</a>　|　© 2024 かけそば総代記</p>
+</footer>
+
+</body>
+</html>
